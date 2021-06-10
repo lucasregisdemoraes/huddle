@@ -1,0 +1,105 @@
+/*  =====   VARIABLE    =====   */
+:root{
+    /* Primary */
+    --pink: hsl(322, 100%, 66%);
+    --lightPink: hsl(321, 100%, 78%);
+    --lightRed: hsl(0, 100%, 63%);
+
+    /* Neutral */
+    --veryDarkCyan: hsl(192, 100%, 9%);
+    --veryPaleBlue: hsl(207, 100%, 98%);
+
+    --gray: rgb(156, 156, 156);
+}
+
+/*  =====   GENERAL STYLES    =====   */
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: sans-serif;
+}
+a,p,span,strong{
+    font-family: sans-serif;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/*  =====   HEADER    =====   */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+header img{
+    height: 17px;
+    display: block;
+}
+
+header .button{
+    font-size: 0.7rem;
+    color: var(--lightPink);
+    border: solid 1px var(--lightPink);
+    border-radius: 20px;
+    width: 80px;
+    height: 25px;
+}
+
+/*  =====   MAIN    =====   */
+main{
+    text-align: center;
+    padding: 0 25px;
+
+}
+main p{
+    color: var(--veryDarkCyan);
+}
+main .button{
+    color: var(--veryPaleBlue);
+    font-size: 0.9rem;
+    font-weight: 700; 
+    background-color: var(--pink);
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: rgb(201, 201, 201) 0 1px 10px 0px;
+}
+main img {
+    width: 95%;
+}
+#secondSection .icon{
+    width: 30px;
+}
+#secondSection strong{
+    font-size: 3.5rem;
+    display: block;
+}
+#secondSection span{
+    color: var(--gray);
+}
+
+/*  =====   FOOTER    =====   */
+footer{
+    background-color: var(--veryDarkCyan);
+    color: var(--veryPaleBlue);
+    padding: 0 25px;
+}
+#footerFirstSection input{
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+}
+#footerFirstSection button{
+    background-color: var(--pink);
+    border: none;
+}
