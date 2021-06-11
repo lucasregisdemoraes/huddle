@@ -9,6 +9,7 @@
     --veryDarkCyan: hsl(192, 100%, 9%);
     --veryPaleBlue: hsl(207, 100%, 98%);
 
+    --darkGray: rgb(59, 59, 59);
     --gray: rgb(156, 156, 156);
 }
 
@@ -36,21 +37,23 @@ a,p,span,strong{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 25px;
+    align-items: center;
+    padding: 25px 25px;
 }
 
 header img{
-    height: 17px;
+    height: 16px;
     display: block;
 }
 
 header .button{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: var(--lightPink);
     border: solid 1px var(--lightPink);
     border-radius: 20px;
     width: 80px;
     height: 25px;
+    box-shadow: var(--lightPink) 0px 0px 10px -5px;
 }
 
 /*  =====   MAIN    =====   */
@@ -59,32 +62,67 @@ main{
     padding: 0 25px;
 
 }
+main h3{
+    margin: 70px 0 30px 0;
+}
 main p{
-    color: var(--veryDarkCyan);
+    color: var(--darkGray);
+    margin: 0;
 }
 main .button{
     color: var(--veryPaleBlue);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 700; 
     background-color: var(--pink);
     width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    margin: auto;
-    box-shadow: rgb(201, 201, 201) 0 1px 10px 0px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 45px auto 0 auto;
+    box-shadow: rgb(0, 0, 0) 0 1px 10px -5px;
 }
 main img {
-    width: 95%;
+    width: 90%;
+    margin-bottom: 80px;
+}
+#firstSection{
+    padding: 90px 0;
+}
+#firstSection h1{
+    margin: 0 0 30px 0;
+    color: var(--veryDarkCyan);
+}
+#secondSection{
+    padding: 10px 0 0 0;
+}
+#secondSection #divSecondSection{
+    margin-top: 40px;
+}
+#secondSection #communitiesDiv{
+    margin-bottom: 95px;
 }
 #secondSection .icon{
     width: 30px;
+    margin: 0;
+    /* text-align: left; */
+    /* display: inline-block; */
 }
 #secondSection strong{
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     display: block;
+    margin-bottom: 10px;
 }
 #secondSection span{
     color: var(--gray);
+    font-size: 0.93rem;
+}
+#messagesDiv .icon{
+    width: 23px;
+}
+#messagesDiv strong{
+    font-size: 3.5rem;
+}
+#messagesDiv span{
+    font-size: 0.85rem;
 }
 
 /*  =====   FOOTER    =====   */
@@ -93,13 +131,68 @@ footer{
     color: var(--veryPaleBlue);
     padding: 0 25px;
 }
+footer h2{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+footer p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    /* font-weight: 600; */
+}
+#footerFirstSection{
+    padding: 0 0 80px 0;
+}
+#footerFirstSection p{
+    margin: 20px 0 30px 0;
+}
 #footerFirstSection input{
     font-size: 1.2rem;
     box-sizing: border-box;
     width: 100%;
-    height: 45px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
 }
 #footerFirstSection button{
     background-color: var(--pink);
+    color: var(--veryPaleBlue);
+    font-size: 1rem;
+    font-weight: 700;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
     border: none;
+    display: block;
+    margin: 15px 0 0 auto;
+}
+#footerSecondSection{
+    padding: 25px 0;
+}
+#footerSecondSection ul{
+    padding: 0;
+}
+#footerSecondSection .logo{
+    width: 200px;
+}
+#footerSecondSection li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 0.87rem;
+}
+#footerSecondSection #contactUl{
+    padding: 0;
+    margin: 40px 0 50px 0;
+}
+#footerSecondSection li img{
+    margin-right: 20px;
+}
+#footerSecondSection #socialMedias{
+    display: flex;
+}
+#socialMedias li{
+    margin: 0;
 }
