@@ -48,22 +48,30 @@ header img{
 
 header .button{
     font-size: 0.65rem;
-    color: var(--lightPink);
-    border: solid 1px var(--lightPink);
+    color: var(--pink);
+    border: solid 1px var(--pink);
     border-radius: 20px;
     width: 80px;
     height: 25px;
+    box-shadow: var(--pink) 0px 0px 10px -5px;
+    transition: .2s;
+}
+header .button:hover{
+    color: var(--lightPink);
+    border: solid 1px var(--lightPink);
     box-shadow: var(--lightPink) 0px 0px 10px -5px;
 }
 
 /*  =====   MAIN    =====   */
 main{
     text-align: center;
+}
+section{
     padding: 0 25px;
-
+    position: relative;
 }
 main h3{
-    margin: 70px 0 30px 0;
+    margin: 0 0 20px 0;
 }
 main p{
     color: var(--darkGray);
@@ -79,20 +87,26 @@ main .button{
     border-radius: 20px;
     margin: 45px auto 0 auto;
     box-shadow: rgb(0, 0, 0) 0 1px 10px -5px;
+    transition: .2s;
+}
+main .button:hover{
+    background-color: var(--lightPink);
 }
 main img {
     width: 90%;
     margin-bottom: 80px;
 }
 #firstSection{
-    padding: 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 #firstSection h1{
     margin: 0 0 30px 0;
     color: var(--veryDarkCyan);
 }
 #secondSection{
-    padding: 10px 0 0 0;
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 #secondSection #divSecondSection{
     margin-top: 40px;
@@ -124,12 +138,32 @@ main img {
 #messagesDiv span{
     font-size: 0.85rem;
 }
+.background{
+    position: absolute;
+}
+#thirdSection{
+    padding: 100px 0;
+    background-color: var(--veryPaleBlue);
+}
+#forthSection{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#fifthSection{
+    background-color: var(--veryPaleBlue);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#sixthSection{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
 
 /*  =====   FOOTER    =====   */
 footer{
     background-color: var(--veryDarkCyan);
     color: var(--veryPaleBlue);
-    padding: 0 25px;
+    padding: 100px 25px 0 25px;
 }
 footer h2{
     font-size: 1.25rem;
@@ -166,6 +200,11 @@ footer p{
     border: none;
     display: block;
     margin: 15px 0 0 auto;
+    transition: .2s;
+    cursor: pointer;
+}
+#footerFirstSection button:hover{
+    background-color: var(--lightPink);
 }
 #footerSecondSection{
     padding: 25px 0;
