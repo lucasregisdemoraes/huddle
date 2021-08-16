@@ -76,6 +76,7 @@ main h3{
 main p{
     color: var(--darkGray);
     margin: 0;
+    line-height: 1.4rem;
 }
 main .button{
     color: var(--veryPaleBlue);
@@ -93,7 +94,7 @@ main .button:hover{
     background-color: var(--lightPink);
 }
 main img {
-    width: 90%;
+    width: 75%;
     margin-bottom: 80px;
 }
 #firstSection{
@@ -108,6 +109,9 @@ main img {
     padding-top: 10px;
     padding-bottom: 100px;
 }
+#secondSection img{
+    width: 90%;
+}
 #secondSection #divSecondSection{
     margin-top: 40px;
 }
@@ -115,7 +119,8 @@ main img {
     margin-bottom: 95px;
 }
 #secondSection .icon{
-    width: 30px;
+    width: initial;
+    height: 30px;
     margin: 0;
     /* text-align: left; */
     /* display: inline-block; */
@@ -130,7 +135,7 @@ main img {
     font-size: 0.93rem;
 }
 #messagesDiv .icon{
-    width: 23px;
+    height: 25px;
 }
 #messagesDiv strong{
     font-size: 3.5rem;
@@ -142,7 +147,8 @@ main img {
     position: absolute;
 }
 #thirdSection{
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--veryPaleBlue);
 }
 #forthSection{
@@ -155,7 +161,7 @@ main img {
     padding-bottom: 100px;
 }
 #sixthSection{
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
@@ -163,7 +169,7 @@ main img {
 footer{
     background-color: var(--veryDarkCyan);
     color: var(--veryPaleBlue);
-    padding: 100px 25px 0 25px;
+    padding: 100px 30px 0 30px;
 }
 footer h2{
     font-size: 1.25rem;
@@ -188,6 +194,9 @@ footer p{
     height: 50px;
     border-radius: 5px;
     border: none;
+}
+#footerFirstSection input:focus{
+    outline: 1px solid var(--pink);
 }
 #footerFirstSection button{
     background-color: var(--pink);
@@ -236,10 +245,8 @@ footer p{
     margin: 0;
 }
 
-@media(min-width:1200px){
-
-/*  =====   GENERAL STYLES    =====   */
-
+/*  =====   RESPONSIVENESS    =====   */
+@media(min-width:800px){
 
 /*  =====   HEADER    =====   */
 header{
@@ -260,12 +267,28 @@ main h1{
 }
 main .button{
     font-size: 1.1rem;
-    width: 400px;
+    width: 350px;
     height: 70px;
     border-radius: 35px;
 }
+main h3{
+    font-size: 2.3rem;
+}
+main img{
+    margin: 0 auto;
+    width: 300px;
+}
+main section{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0 50px;
+    gap: 50px;
+}
 #firstSection{
+    display: block;
     padding-top: 150px;
+    text-align: center;
 }
 #firstSection p{
     font-size: 1.2rem;
@@ -273,9 +296,102 @@ main .button{
     width: 620px;
     margin: auto;
 }
+#secondSection{
+    display: block;
+    text-align: center;
+}
+#secondSection img{
+    width: 90%;
+}
+#secondSection #divSecondSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+#secondSection .icon{
+    margin-bottom: 10px;
+    display: block;
+    height: 35px;
+}
+#secondSection strong{
+    font-size: 4.5rem;
+}
+#secondSection span{
+    font-size: 1.3rem;
+}
+#messagesDiv .icon{
+    height: 30px;
+}
+#thirdSection{
+    flex-direction: row-reverse;
+}
+#fifthSection{
+    flex-direction: row-reverse;
+}
+#sixthSection{
+    display: block;
+    text-align: center;
+}
+#sixthSection h2{
+    font-size: 2.5rem;
+}
 
 /*  =====   FOOTER    =====   */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 50px 50px;
+}
+footer h2{
+    font-size: 1.5rem;
+}
+footer p{
+    font-size: 1rem;
+    width: 390px;
+}
+#footerFirstSection{
+    padding: 0;
+}
+#footerFirstSection form{
+    display: flex;
+}
+#footerFirstSection input{
+    width: 350px;
+}
+#footerFirstSection button{
+    margin: 0 0 0 40px;
+}
+#footerSecondSection{
+    padding: 0;
+    margin-top: 50px;
+}
+#footerSecondSection .logo{
+    width: 250px;
+}
+#footerSecondSection li{
+    font-size: 1rem;
+}
+#footerSecondSection #contactUl{
+    margin: 40px 0 70px 0;
+}
 
+}
+
+@media(min-width:1200px){
+main img{
+    width: 500px;
+}
+main section{
+    gap: 100px;
+    padding: 0 100px;
+}
+
+/*  =====   FOOTER    =====   */
+footer{
+    flex-direction: row-reverse;
+    padding: 100px 50px;
+}
 
 
 }
