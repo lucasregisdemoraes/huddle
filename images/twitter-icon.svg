@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="twitter-icon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.7648746"
+     inkscape:cx="45.282371"
+     inkscape:cy="53.679416"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54164)">
+    <path
+       style="fill:#00cfee;fill-opacity:1;stroke:#00cfee;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.866036,270.54158 C 0.83227819,270.54158 0,271.50829 0,272.70902 v 22.12344 c 0,1.20074 0.83227819,2.16745 1.866036,2.16745 h 22.726261 c 1.033758,0 1.866036,-0.96671 1.866036,-2.16745 v -22.12344 c 0,-1.20073 -0.832278,-2.16744 -1.866036,-2.16744 z m 14.792895,4.93393 c 1.178016,-0.0545 2.239531,0.5798 3.167766,1.53599 0.12916,0.35013 2.533695,-1.09602 2.533695,-1.09602 0,0 -0.122056,1.37093 -1.22008,1.89614 -1.098154,0.52523 1.727542,-0.26831 1.727543,-0.26831 l -1.5844,1.82592 c 0,0 -0.01266,3.79461 -1.49965,6.34567 -1.485739,2.55107 -2.836333,4.76083 -5.727816,5.67762 -0.03996,0.0393 -7.4483476,1.91495 -10.4655107,-0.75449 0,0 4.2137475,-0.77757 5.3593629,-1.76829 -2.1924909,-0.63666 -3.806486,-2.68845 -3.806486,-2.68845 l 2.0401857,-0.28271 c 0,0 -3.5321264,-1.94531 -3.5625733,-4.31509 l 1.9487181,0.21188 c 0,0 -2.9183803,-3.22577 -1.1151772,-5.34508 0,0 2.1545442,2.40318 3.6586911,3.3391 1.551945,1.07024 3.1171644,1.04053 4.8379474,1.05281 0,-2.65413 0.394508,-3.80586 2.030884,-4.83129 0.581966,-0.34359 1.141438,-0.51065 1.6769,-0.5354 z"
+       id="rect8-6"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

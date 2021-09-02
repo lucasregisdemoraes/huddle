@@ -17,15 +17,24 @@
 body{
     margin: 0;
 }
+
+.container {
+    margin: 0 auto;
+    width: min(90vw, 600px);
+}
+
 a{
     text-decoration: none;
 }
+
 h1,h2,h3{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 a,p,span,strong{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
 .button{
     display: flex;
     justify-content: center;
@@ -34,11 +43,11 @@ a,p,span,strong{
 }
 
 /*  =====   HEADER    =====   */
-header{
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    height: 75px;
 }
 
 header .logo{
@@ -54,8 +63,9 @@ header .button{
     width: 80px;
     height: 25px;
     box-shadow: var(--pink) 0px 0px 10px -5px;
-    transition: .2s;
+    transition: border .2s, color .2s;
 }
+
 header .button:hover{
     color: var(--lightPink);
     border: solid 1px var(--lightPink);
@@ -66,18 +76,23 @@ header .button:hover{
 main{
     text-align: center;
 }
+
 section{
-    padding: 0 25px;
     position: relative;
 }
+
 main h3{
+    font-size: 1.25rem;
     margin: 0 0 20px 0;
 }
+
 main p{
+    font-size: 0.9rem;
     color: var(--darkGray);
     margin: 0;
     line-height: 1.4rem;
 }
+
 main .button{
     color: var(--veryPaleBlue);
     font-size: 0.7rem;
@@ -88,116 +103,172 @@ main .button{
     border-radius: 20px;
     margin: 45px auto 0 auto;
     box-shadow: rgb(0, 0, 0) 0 1px 10px -5px;
-    transition: .2s;
+    transition: background .2s;
 }
+
 main .button:hover{
     background-color: var(--lightPink);
 }
+
 main img {
     width: 75%;
     margin-bottom: 80px;
 }
+
 #firstSection{
     padding-top: 90px;
     padding-bottom: 90px;
 }
+
 #firstSection h1{
     margin: 0 0 30px 0;
     color: var(--veryDarkCyan);
 }
+
 #secondSection{
     padding-top: 10px;
     padding-bottom: 100px;
+    background-image: url(../images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
+
 #secondSection img{
     width: 90%;
 }
+
 #secondSection #divSecondSection{
     margin-top: 40px;
 }
+
 #secondSection #communitiesDiv{
     margin-bottom: 95px;
 }
+
 #secondSection .icon{
     width: initial;
-    height: 30px;
+    height: 27px;
     margin: 0;
-    /* text-align: left; */
-    /* display: inline-block; */
+    margin-right: 115px;
 }
+
 #secondSection strong{
     font-size: 3.7rem;
     display: block;
     margin-bottom: 10px;
 }
+
 #secondSection span{
     color: var(--gray);
     font-size: 0.93rem;
 }
+
 #messagesDiv .icon{
-    height: 25px;
+    height: 20px;
+    margin-right: 130px;
+
 }
+
 #messagesDiv strong{
     font-size: 3.5rem;
 }
+
 #messagesDiv span{
     font-size: 0.85rem;
 }
-.background{
-    position: absolute;
-}
+
 #thirdSection{
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-color: var(--veryPaleBlue);
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
+
 #forthSection{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-image: url(../images/bg-section-bottom-mobile-1.svg), url(../images/bg-section-top-mobile-2.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100%;
 }
+
 #fifthSection{
     background-color: var(--veryPaleBlue);
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
+
 #sixthSection{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-image: url(../images/bg-section-bottom-mobile-2.svg), url(../images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100%;
 }
 
 /*  =====   FOOTER    =====   */
 footer{
     background-color: var(--veryDarkCyan);
     color: var(--veryPaleBlue);
-    padding: 100px 30px 0 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
 footer h2{
     font-size: 1.25rem;
     text-transform: uppercase;
     margin: 0;
 }
+
 footer p{
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.5rem;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
+
 #footerFirstSection{
     padding: 0 0 80px 0;
 }
+
 #footerFirstSection p{
     margin: 20px 0 30px 0;
 }
-#footerFirstSection input{
+
+#footerFirstSection form {
+    position: relative;
+}
+
+#footerFirstSection input {
     font-size: 1.2rem;
     box-sizing: border-box;
+    padding: 0 15px;
     width: 100%;
     height: 50px;
     border-radius: 5px;
     border: none;
 }
-#footerFirstSection input:focus{
+
+#footerFirstSection input:focus {
     outline: 1px solid var(--pink);
 }
+
+#footerFirstSection input.invalid {
+    outline: 1px solid rgb(255, 69, 69);
+}
+
+#footerFirstSection form span {
+    color: rgb(255, 69, 69);
+    display: none;
+    position: absolute;
+    top: 55px;
+}
+
+#footerFirstSection form span.show {
+    display: block;
+}
+
 #footerFirstSection button{
     background-color: var(--pink);
     color: var(--veryPaleBlue);
@@ -209,21 +280,27 @@ footer p{
     border: none;
     display: block;
     margin: 15px 0 0 auto;
-    transition: .2s;
+    transition: background .2s;
     cursor: pointer;
 }
+
 #footerFirstSection button:hover{
     background-color: var(--lightPink);
 }
+
 #footerSecondSection{
-    padding: 25px 0;
+    padding-top: 25px;
 }
+
 #footerSecondSection ul{
     padding: 0;
 }
+
 #footerSecondSection .logo{
     width: 200px;
+    filter: sepia(100%) brightness(1000%);
 }
+
 #footerSecondSection li{
     list-style-type: none;
     display: flex;
@@ -231,167 +308,226 @@ footer p{
     margin: 20px 0;
     font-size: 0.87rem;
 }
+
 #footerSecondSection #contactUl{
     padding: 0;
     margin: 40px 0 50px 0;
 }
-#footerSecondSection li img{
+
+#footerSecondSection #contactUl li img{
     margin-right: 20px;
 }
+
 #footerSecondSection #socialMedias{
     display: flex;
+    margin-bottom: 0;
 }
+
 #socialMedias li{
     margin: 0;
+    margin-right: 20px;
+}
+
+#socialMedias li img {
+    width: 30px;
+    filter: sepia(100%) brightness(500%);
+    transition: filter .2s;
+}
+
+#socialMedias li img:hover {
+    filter: initial;
+
 }
 
 /*  =====   RESPONSIVENESS    =====   */
-@media(min-width:800px){
+@media(min-width: 1024px){
+    .container {
+        width: min(90vw, 1100px);
+        /* max-width: 962px; */
+    }
 
-/*  =====   HEADER    =====   */
-header{
-    padding: 60px;
-}
-header .logo{
-    width: 215px;
-}
-header .button{
-    font-size: 0.9rem;
-    width: 115px;
-    height: 35px;
-}
+    /*  =====   HEADER    =====   */
+    header .container{
+    height: 150px;
+    }
 
-/*  =====   MAIN    =====   */
-main h1{
-    font-size: 2.5rem;
-}
-main .button{
-    font-size: 1.1rem;
-    width: 350px;
-    height: 70px;
-    border-radius: 35px;
-}
-main h3{
-    font-size: 2.3rem;
-}
-main img{
-    margin: 0 auto;
-    width: 300px;
-}
-main section{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding: 0 50px;
-    gap: 50px;
-}
-#firstSection{
-    display: block;
-    padding-top: 150px;
-    text-align: center;
-}
-#firstSection p{
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    width: 620px;
-    margin: auto;
-}
-#secondSection{
-    display: block;
-    text-align: center;
-}
-#secondSection img{
-    width: 90%;
-}
-#secondSection #divSecondSection{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-#secondSection .icon{
-    margin-bottom: 10px;
-    display: block;
-    height: 35px;
-}
-#secondSection strong{
-    font-size: 4.5rem;
-}
-#secondSection span{
-    font-size: 1.3rem;
-}
-#messagesDiv .icon{
-    height: 30px;
-}
-#thirdSection{
-    flex-direction: row-reverse;
-}
-#fifthSection{
-    flex-direction: row-reverse;
-}
-#sixthSection{
-    display: block;
-    text-align: center;
-}
-#sixthSection h2{
-    font-size: 2.5rem;
-}
+    header .logo{
+        width: 215px;
+    }
 
-/*  =====   FOOTER    =====   */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 100px 50px 50px;
-}
-footer h2{
-    font-size: 1.5rem;
-}
-footer p{
-    font-size: 1rem;
-    width: 390px;
-}
-#footerFirstSection{
-    padding: 0;
-}
-#footerFirstSection form{
-    display: flex;
-}
-#footerFirstSection input{
-    width: 350px;
-}
-#footerFirstSection button{
-    margin: 0 0 0 40px;
-}
-#footerSecondSection{
-    padding: 0;
-    margin-top: 50px;
-}
-#footerSecondSection .logo{
-    width: 250px;
-}
-#footerSecondSection li{
-    font-size: 1rem;
-}
-#footerSecondSection #contactUl{
-    margin: 40px 0 70px 0;
-}
+    header .button{
+        font-size: 0.9rem;
+        width: 115px;
+        height: 35px;
+    }
 
-}
+    /*  =====   MAIN    =====   */
+    main h1{
+        font-size: 2.5rem;
+    }
 
-@media(min-width:1200px){
-main img{
-    width: 500px;
-}
-main section{
-    gap: 100px;
-    padding: 0 100px;
-}
+    main .button{
+        font-size: 1.1rem;
+        width: 350px;
+        height: 70px;
+        border-radius: 35px;
+        margin-top: 35px;
+    }
 
-/*  =====   FOOTER    =====   */
-footer{
-    flex-direction: row-reverse;
-    padding: 100px 50px;
-}
+    main h3{
+        font-size: 2.3rem;
+    }
 
+    main img{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    main section .container{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 10%;
+    }
+    
+    #firstSection .container{
+        display: block;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    #firstSection p{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        width: 620px;
+        margin: auto;
+    }
+
+    #secondSection {
+        background-image: url(../images/bg-section-top-desktop-1.svg);
+    }
+
+    #secondSection .container{
+        display: block;
+        text-align: center;
+    }
+
+    #secondSection img{
+        width: 90%;
+    }
+
+    #secondSection #divSecondSection{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+
+    #secondSection .icon{
+        margin-bottom: 10px;
+        display: block;
+        height: 35px;
+    }
+
+    #secondSection strong{
+        font-size: 4.5rem;
+    }
+
+    #secondSection span{
+        font-size: 1.3rem;
+    }
+
+    #messagesDiv .icon{
+        height: 30px;
+    }
+
+    #thirdSection {
+        padding-top: 100px;
+        padding-top: 100px;
+    }
+
+    #thirdSection .container, #fifthSection .container {
+        flex-direction: row-reverse;
+    }
+
+    #forthSection{
+        background-image: url(../images/bg-section-bottom-desktop-1.svg), url(../images/bg-section-top-desktop-2.svg);
+    }
+
+    #fifthSection {
+        padding-bottom: 50px;
+    }
+
+    #sixthSection{
+        background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-footer-top-desktop.svg);
+        padding-top: 200px;
+        padding-bottom: 250px;
+    }
+
+    #sixthSection .container{
+        display: block;
+        text-align: center;
+    }
+
+    #sixthSection h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    /*  =====   FOOTER    =====   */
+    footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+    }
+
+    footer h2{
+        font-size: 1.5rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+        width: 390px;
+    }
+
+    #footerFirstSection{
+        padding: 0;
+        order: 1;
+    }
+
+    #footerFirstSection form{
+        display: flex;
+    }
+
+    #footerFirstSection input{
+        width: 350px;
+    }
+
+    #footerFirstSection button{
+        margin: 0 0 0 40px;
+    }
+
+    #footerSecondSection{
+        padding: 0;
+        order: 0;
+    }
+
+    #footerSecondSection .logo{
+        width: 250px;
+    }
+
+    #footerSecondSection li{
+        font-size: 1rem;
+    }
+
+    #footerSecondSection #contactUl{
+        margin: 40px 0 70px 0;
+    }
 
 }
